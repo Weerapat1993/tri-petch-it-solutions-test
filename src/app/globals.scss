@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-secondary: #F5F4F9;
+  --swiper-theme-color: #603EBE;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(var(--foreground-rgb));
+  background: --background-end-rgb
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-auto {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.col-5 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.font-header {
+  font-style: normal;
+  font-size: 90px;
+  line-height: 105px;
+  color: #E7E7E7;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+@media (min-width: 360px) {
+  .font-header {
+    font-style: normal;
+    font-size: 56px;
+    line-height: 70px;
+    color: #E7E7E7;
+    margin: 10px 20px;
+    animation: fadein 1s;
+    transition: all 1s;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+  }
+}
+
+.font-sub-header {
+  font-style: normal;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+  color: #E7E7E7;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.font-sub-header-secondary {
+  font-style: normal;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+  color: #C2C2C2;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.font-title {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 1.5px;
+  color: #000;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.font-description {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.text-primary {
+  color: #8F6BE8;
+}
+
+.text-gray {
+  color: #C2C2C2;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.underline {
+  width: 90%;
+  background-color: #603EBE;
+  height: 2.5px;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.underline-white {
+  width: 90%;
+  background-color: #FFF;
+  height: 2.5px;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.pl-300 {
+  padding-left: 300px;
+}
+
+.bg-primary {
+  background-color: #5E3DB3;
+}
+
+.bg-secondary {
+  background-color: #F5F4F9;
+}
+
+.bg-dark {
+  background-color: #090C35;
+}
+
+.footballer {
+  position: absolute;
+  top: 35px;
+  left: 175px;
+  width: 500px;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.bastketballer {
+  position: absolute;
+  top: 5px;
+  right: 75px;
+  width: 800px;
+  animation: fadein 1s;
+  transition: all 1s;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+@media (max-width: 768px) and (min-width: 360px) {
+  .footballer {
+    position: absolute;
+    top: 35px;
+    left: -65px;
+    width: 500px;
+    animation: fadein 1s;
+    transition: all 1s;
+    -moz-transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+  }
+  .bastketballer {
+    position: absolute;
+    top: 0px;
+    right: -275px;
+    width: 800px;
+    animation: fadein 1s;
+    transition: all 1s;
+    -moz-transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 768px) {
+  .footballer {
+    position: absolute;
+    top: 35px;
+    left: -65px;
+    width: 500px;
+    animation: fadein 1s;
+    transition: all 1s;
+    -moz-transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+  }
+  .bastketballer {
+    position: absolute;
+    top: 0px;
+    right: -275px;
+    width: 800px;
+    animation: fadein 1s;
+    transition: all 1s;
+    -moz-transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
